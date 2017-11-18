@@ -1,17 +1,18 @@
 <div class="jumbotron">
-  <h1>Super Secret Puppies</h1>
-  <p>All the puppies you could need, kept safe under lock and key.</p>
-  <%= link_to "See the puppies now!", puppies_path, class: "btn btn-primary btn-lg" %>
+  <h1>PetyWorld</h1>
+  <p>En PetyWorld tienes la posibilidad de añadir mascotas</p>
+  <p>Fácil de usar, interfaz amigable </p>
+
+  <%= link_to "ver mascotas", puppies_path, class: "btn btn-primary btn-lg" %>
 </div>
 
 <div class="row">
   <div class="col-md-4">
-    <h2>Premium puppy pics</h2>
-    <p>You know who you are and you know what you want. You want pictures of
-    puppies and this site is the site for you.</p>
+    <h2>¡Estamos interesados en proteger tus datos!</h2>
+    <p>Ofrecemos un sistema de autenticacion de doble verificación, y encriptacion con algoritmo bycript.</p>
   </div>
   <div class="col-md-4">
-    <h2>Free user accounts</h2>
+    <h2></h2>
     <p>Pictures of puppies are great, but signing up to see them in order to
     keep those pictures secure is even greater.</p>
   </div>
@@ -22,13 +23,8 @@
   </div>
   <div class="col-md-4">
     <div id="resultados">
-      
+
     </div>
-     <%= form_tag "search/create", method: :get, remote: true, id: "search-form" do %>
-     <%= text_field_tag :keyword, nil , placeholder: "Que estas buscando "%>
-     <%= content_tag :button, type: :submit do %>
-     Buscar 
-     <%end%>
-  <%end%>
+
  </div>
 </div>
