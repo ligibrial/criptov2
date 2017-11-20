@@ -13,6 +13,17 @@ $ bundle install
 $ bundle exec rails server
 ```
 
+
 ## Adding Devise and 2FA with Authy
 
 You will have to look out for a blog post with all the details. The completed application is in the complete branch.
+
+
+# For problems with bd @jucjimenezmo
+rails db:drop
+rails db:create
+rails db:migrate
+
+#For running by https @jucjimenezmo
+bundle exec thin start -p 3001 --ssl --ssl-key-file .ssl/localhost.key --ssl-cert-file .ssl/localhost.crt
+
